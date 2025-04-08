@@ -27,9 +27,11 @@
 							<img src="images/products/default-image.png" alt="cafetera moulinex">
 						</figure>
 						<article class="product-box_data">
-							<h2>Nombre del producto</h2>
-							<p>Descripción corta del producto Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque delectus ex</p>
-							<p>Comentarios: 12</p>
+							<h2><%=productos[0].nombre%></h2>
+							<p><%=productos[0].descripcion%></p>
+							<p>Comentarios:</p>
+							<p><%= productos[0].comentarios[0].usuario %>: <%= productos[0].comentarios[0].texto %></p>
+
 						</article>
 					</a>
 				</section>
@@ -41,10 +43,9 @@
 							<img src="images/products/default-image.png" alt="cafetera moulinex">
 						</figure>
 						<article class="product-box_data">
-							<h2>Nombre del producto</h2>
-							<p>Descripción corta del producto Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
-								delectus ex</p>
-							<p>Comentarios: 12</p>
+							<h2><%=productos[1].nombre%></productos></h2>
+							<p><%=productos[1].descripcion%></p>
+							<p><%= productos[1].comentarios[0].usuario %>: <%= productos[1].comentarios[0].texto %></p>
 						</article>
 					</a>
 				</section>
@@ -56,10 +57,9 @@
 							<img src="images/products/default-image.png" alt="cafetera moulinex">
 						</figure>
 						<article class="product-box_data">
-							<h2>Nombre del producto</h2>
-							<p>Descripción corta del producto Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
-								delectus ex</p>
-							<p>Comentarios: 12</p>
+							<h2><%=productos[2].nombre%></h2>
+							<p><%=productos[2].descripcion%></p>
+							<p><%= productos[2].comentarios[0].usuario %>: <%= productos[2].comentarios[0].texto %></p>
 						</article>
 					</a>
 				</section>
@@ -71,10 +71,9 @@
 							<img src="images/products/default-image.png" alt="cafetera moulinex">
 						</figure>
 						<article class="product-box_data">
-							<h2>Nombre del producto</h2>
-							<p>Descripción corta del producto Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
-								delectus ex</p>
-							<p>Comentarios: 12</p>
+							<h2><%=productos[3].nombre%></h2>
+							<p><%=productos[3].descripcion%></p>
+							<p><%= productos[3].comentarios[0].usuario %>: <%= productos[3].comentarios[0].texto %></p>
 						</article>
 					</a>
 				</section>
