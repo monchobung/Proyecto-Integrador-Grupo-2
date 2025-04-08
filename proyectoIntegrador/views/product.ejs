@@ -10,7 +10,7 @@
 
 
   <div class="titulo-producto">
-    <h2>Nombre del producto</h2>
+    <h2><%=productos[0].nombre%></h2>
     <p class="editar">Editar</p>
   </div>
 
@@ -19,28 +19,27 @@
     <div class="producto">
       <div class="info-producto">
         <div class="imagen-producto">
-          <img src="" alt="Imagen del producto">
+          <img src="/img/porsche.jpg" alt="Imagen del producto">
         </div>
 
         <p class="descripcion">
-          Descripción cortca del producto. En la página principal solo se ven 2 líneas de esta descripción.
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+			<%=productos[0].descripcion%>
         </p>
       </div>
     </div>
 
     <div class="comentarios">
       <div class="comentario">
-        <p><a>Nombre usuario:</a> Comentario</p>
+        <p><a><%=productos[0].comentarios[0].usuario%>:</a> <%=productos[0].comentarios[0].texto%></p>
       </div>
       <div class="comentario">
-        <p><a>Nombre usuario:</a> Comentario</p>
+        <p><a><%= productos[0].comentarios[1].usuario %>:</a> <%=productos[0].comentarios[1].texto%></p>
       </div>
       <div class="comentario">
-        <p><a>Nombre usuario:</a> Comentario</p>
+        <p><a><%= productos[0].comentarios[2].usuario %>: </a> <%=productos[0].comentarios[2].texto%></p>
       </div>
       <div class="comentario">
-        <p><a>Nombre usuario:</a> Comentario</p>
+        <p><a><%= productos[0].comentarios[3].usuario %>: </a> <%=productos[0].comentarios[3].texto%></p>
       </div>
 
       <div class="formulario-comentarios">

@@ -10,15 +10,30 @@ const datos = {
 
     productos: [
         {
-            nombre: 'Producto 1',
-            descripcion: 'Descripcion del producto 1',
-            imagen: '',
+            nombre: 'Porsche 911 Carrera 1990',
+            descripcion: 'El Porsche 911 Carrera de 1990 es un deportivo con un motor que rugía áspero y una cabina envolvente. El auto esta en perfecto estado, solo requiere cambio de frenos.',
+            imagen: '/img/porsche.jpg',
             comentarios:[
                 {
                     usuario: 'nico300',
                     texto: 'Buen producto',
                     imagenPerfil:''
-                }
+                },
+                {
+                    usuario: 'juanceto09',
+                    texto: 'Que nave',
+                    imagenPerfil:''
+                },
+                {
+                    usuario: 'fanautos',
+                    texto: 'El auto de mis sueños',
+                    imagenPerfil:''
+                },
+                {
+                    usuario: 'pedro123',
+                    texto: 'Pero que bicho...',
+                    imagenPerfil:''
+                },
             ]
         },
         {
@@ -28,9 +43,24 @@ const datos = {
             comentarios:[
                 {
                     usuario: 'nico300',
-                    texto: 'Buen producto',
+                    texto: 'Terrible fierro',
                     imagenPerfil:''
-                }
+                },
+                {
+                    usuario: 'juanceto09',
+                    texto: 'Que nave',
+                    imagenPerfil:''
+                },
+                {
+                    usuario: 'fanautos',
+                    texto: 'El auto de mis sueños',
+                    imagenPerfil:''
+                },
+                {
+                    usuario: 'pedro123',
+                    texto: 'Pero que bicho...',
+                    imagenPerfil:''
+                },
             ]
         },
         {
