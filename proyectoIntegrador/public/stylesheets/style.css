@@ -528,3 +528,84 @@ textarea.form-input {
     margin: auto;
   }
 }
+
+/* producto css */
+
+.titulo-producto {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 5px;  
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titulo-producto h2 {
+  font-size: 24px;
+}
+
+.titulo-producto .editar {
+  font-size: 14px;
+}
+
+.contenedor {
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.producto {
+  flex: 2;
+  margin-right: 20px;
+}
+
+.imagen-producto img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin-bottom: 15px;
+  
+}
+.descripcion {
+  font-size: 14px;
+  color: black;
+}
+
+.comentarios {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.comentario {
+  background-color: #e4e4e4;
+  padding: 10px;
+  font-size: 14px;
+  
+}
+
+.comentario a {
+  color: black;
+  font-weight: bold;
+}
+
+
+.formulario-comentarios {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.formulario-comentarios input {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+
