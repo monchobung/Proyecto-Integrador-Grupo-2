@@ -24,14 +24,16 @@
 				<section class="product-box">
 					<a href="product.html">
 						<figure class="product-box_image">
-							<img src="images/products/default-image.png" alt="cafetera moulinex">
+							<img src="<%=productos[0].imagen%>" alt="<%=productos[0].nombre%>">
 						</figure>
 						<article class="product-box_data">
 							<h2><%=productos[0].nombre%></h2>
 							<p><%=productos[0].descripcion%></p>
 							<p>Comentarios:</p>
 							<p><%= productos[0].comentarios[0].usuario %>: <%= productos[0].comentarios[0].texto %></p>
-
+							<p><%= productos[0].comentarios[1].usuario %>: <%= productos[0].comentarios[1].texto %></p>
+							<p><%= productos[0].comentarios[2].usuario %>: <%= productos[0].comentarios[2].texto %></p>
+							<p><%= productos[0].comentarios[3].usuario %>: <%= productos[0].comentarios[3].texto %></p>
 						</article>
 					</a>
 				</section>
@@ -40,12 +42,16 @@
 				<section class="product-box">
 					<a href="product.html">
 						<figure class="product-box_image">
-							<img src="images/products/default-image.png" alt="cafetera moulinex">
+							<img src="<%=productos[1].imagen%>" alt="cafetera moulinex">
 						</figure>
 						<article class="product-box_data">
 							<h2><%=productos[1].nombre%></productos></h2>
 							<p><%=productos[1].descripcion%></p>
 							<p><%= productos[1].comentarios[0].usuario %>: <%= productos[1].comentarios[0].texto %></p>
+							<p><%= productos[1].comentarios[1].usuario %>: <%= productos[1].comentarios[1].texto %></p>
+							<p><%= productos[1].comentarios[2].usuario %>: <%= productos[1].comentarios[2].texto %></p>
+							<p><%= productos[1].comentarios[3].usuario %>: <%= productos[1].comentarios[3].texto %></p>
+						
 						</article>
 					</a>
 				</section>
@@ -54,7 +60,7 @@
 				<section class="product-box">
 					<a href="product.html">
 						<figure class="product-box_image">
-							<img src="images/products/default-image.png" alt="cafetera moulinex">
+							<img src="/img/mc12.jpg" alt="cafetera moulinex">
 						</figure>
 						<article class="product-box_data">
 							<h2><%=productos[2].nombre%></h2>
@@ -68,7 +74,7 @@
 				<section class="product-box">
 					<a href="product.html">
 						<figure class="product-box_image">
-							<img src="images/products/default-image.png" alt="cafetera moulinex">
+							<img src="/img/jaguar.jpg" alt="cafetera moulinex">
 						</figure>
 						<article class="product-box_data">
 							<h2><%=productos[3].nombre%></h2>

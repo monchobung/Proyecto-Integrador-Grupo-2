@@ -187,7 +187,11 @@ hr {
 }
 
 .product-box_image {
+  display: flex;
+  justify-content: center;
   border-bottom: 1px solid var(--light-gray);
+  max-width: 300px;
+  
 }
 
 .product-box_data {

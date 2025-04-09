@@ -37,47 +37,62 @@ const datos = {
             ]
         },
         {
-            nombre: 'Producto 2',
-            descripcion: 'Descripcion del producto 2',
-            imagen: '',
+            nombre: 'Mercedes Benz 300 SL 1954',
+            descripcion: 'El Mercedes Benz 300 SL de 1954 es un ícono de la ingeniería automotriz, con su diseño distintivo y su motor potente. Este auto es una obra maestra que combina elegancia y rendimiento. Como nuevo, segundo dueño.',
+            imagen: '/img/mercedes300sl.jpg',
             comentarios:[
                 {
-                    usuario: 'nico300',
-                    texto: 'Terrible fierro',
+                    usuario: 'toui ',
+                    texto: 'ayy que lindo',
                     imagenPerfil:''
                 },
                 {
-                    usuario: 'juanceto09',
-                    texto: 'Que nave',
+                    usuario: 'johnlenon',
+                    texto: 'que lo pario...',
                     imagenPerfil:''
                 },
                 {
-                    usuario: 'fanautos',
-                    texto: 'El auto de mis sueños',
+                    usuario: 'lucashabib',
+                    texto: 'que locura',
                     imagenPerfil:''
                 },
                 {
-                    usuario: 'pedro123',
-                    texto: 'Pero que bicho...',
+                    usuario: 'ruderoca',
+                    texto: 'faa mi viejo tenia uno',
                     imagenPerfil:''
                 },
             ]
         },
         {
-            nombre: 'Producto 3',
-            descripcion: 'Descripcion del producto 3',
-            imagen: '',
+            nombre: 'Maserati MC12 2004',
+            descripcion: 'El Maserati MC12 de 2004 es un superdeportivo que combina un diseño aerodinámico con un motor V12 potente. Este auto es una obra maestra de la ingeniería automotriz, ofreciendo un rendimiento excepcional y una experiencia de conducción única.',
+            imagen: '/img/mc12.jpg',
             comentarios:[
                 {
-                    usuario: 'nico300',
-                    texto: 'Buen producto',
+                    usuario: 'matiromig',
+                    texto: 'Precio?',
                     imagenPerfil:''
-                }
+                },
+                {
+                    usuario: 'themoncho96',
+                    texto: 'Increible',
+                    imagenPerfil:''
+                },
+                {
+                    usuario: 'ojodeindigo',
+                    texto: 'Que motor tiene?',
+                    imagenPerfil:''
+                },
+                {
+                    usuario: 'Chilitatan',
+                    texto: 'UFFFF!',
+                    imagenPerfil:''
+                },
             ]
         },
         {
-            nombre: 'Producto 4',
-            descripcion: 'Descripcion del producto 4',
+            nombre: 'Jaguar E-Type 1963',
+            descripcion: 'El Jaguar E-Type de 1963 es un ícono del diseño automotriz, conocido por su elegancia y rendimiento. Este auto combina un motor potente con una estética atemporal, ofreciendo una experiencia de conducción única.',
             imagen: '',
             comentarios:[
                 {
