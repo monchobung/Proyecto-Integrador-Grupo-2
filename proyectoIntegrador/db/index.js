@@ -96,10 +96,25 @@ const datos = {
             imagen: '',
             comentarios:[
                 {
-                    usuario: 'nico300',
-                    texto: 'Buen producto',
+                    usuario: 'Felipe Zimer',
+                    texto: 'Naa, increible',
                     imagenPerfil:''
-                }
+                },
+                {
+                    usuario: 'Bauti Canoa',
+                    texto: 'del mejor año',
+                    imagenPerfil:''
+                },
+                {
+                    usuario: 'beltran pt',
+                    texto: 'de los mejores modelos!',
+                    imagenPerfil:''
+                },
+                {
+                    usuario: 'Kiruff45',
+                    texto: 'ojala poder tener uno de esos',
+                    imagenPerfil:''
+                },
             ]
         },
         {
