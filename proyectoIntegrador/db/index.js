@@ -5,7 +5,7 @@ const datos = {
         contrasena: 'Hola12345',
         fecha: '01/07/2000',
         documento: 42653097,
-        //Foto de perfil?
+        foto: '/img/perfilfoto.jpg'
     },
 
     productos: [
@@ -93,7 +93,7 @@ const datos = {
         {
             nombre: 'Jaguar E-Type 1963',
             descripcion: 'El Jaguar E-Type de 1963 es un ícono del diseño automotriz, conocido por su elegancia y rendimiento. Este auto combina un motor potente con una estética atemporal, ofreciendo una experiencia de conducción única.',
-            imagen: '',
+            imagen: '/img/jaguar.jpg',
             comentarios:[
                 {
                     usuario: 'Felipe Zimer',
@@ -118,75 +118,166 @@ const datos = {
             ]
         },
         {
-            nombre: 'Producto 5',
-            descripcion: 'Descripcion del producto 5',
-            imagen: '',
+            nombre: 'Ferrari F40',
+            descripcion: 'La Ferrari F40 es un superdeportivo icónico lanzado en 1987, diseñado para celebrar los 40 años de Ferrari. Con motor V8 biturbo, chasis liviano y diseño agresivo',
+            imagen: '/img/ferrarf40.jpg',
             comentarios:[
                 {
-                    usuario: 'nico300',
-                    texto: 'Buen producto',
+                    usuario: 'alan_pato',
+                    texto: 'Mi auto favorito!',
+                    imagenPerfil:''
+                },
+                {
+                    usuario: 'nicopopi',
+                    texto: 'Es realmente hermoso. Una obra de arte',
+                    imagenPerfil:''
+                },
+                {
+                    usuario: 'chama',
+                    texto: 'Que lindo ese color rojo...',
+                    imagenPerfil:''
+                },
+                {
+                    usuario: 'leomessi',
+                    texto: 'Yo tengo una de esas en barcelona',
                     imagenPerfil:''
                 }
             ]
         },
         {
-            nombre: 'Producto 6',
-            descripcion: 'Descripcion del producto 6',
-            imagen: '',
+            nombre: 'Lamborghini Countach',
+            descripcion: 'El Lamborghini Countach es un superdeportivo icónico lanzado en 1974, famoso por su diseño angular y puertas tipo tijera. Fue un símbolo de los años 80 y marcó el estilo de los Lamborghinis modernos.',
+            imagen: '/img/countach.jpg',
             comentarios:[
                 {
-                    usuario: 'nico300',
-                    texto: 'Buen producto',
+                    usuario: 'Frangomez',
+                    texto: 'Ese es el auto que se uso en el Lobo de Wall Street?',
                     imagenPerfil:''
-                }
+                },
+                {
+                    usuario: 'marcosgubi',
+                    texto: 'Me gusta mas ferrar que lamborghini',
+                    imagenPerfil:''
+                },
+                {
+                    usuario: 'monchito',
+                    texto: 'Lindo fierro che',
+                    imagenPerfil:''
+                },
+                {
+                    usuario: 'ramayo',
+                    texto: 'Pfff. Hermoso',
+                    imagenPerfil:''
+                },
             ]
         },
         {
-            nombre: 'Producto 7',
-            descripcion: 'Descripcion del producto 7',
-            imagen: '',
+            nombre: 'Bugatti EB100',
+            descripcion: 'El Bugatti EB110 es un superdeportivo de los 90 con motor V12 quadriturbo, tracción integral y carrocería de fibra de carbono. Ícono de su época, combina tecnología avanzada con diseño elegante.',
+            imagen: '/img/bugattieb100.jpg',
             comentarios:[
                 {
-                    usuario: 'nico300',
-                    texto: 'Buen producto',
+                    usuario: 'licha',
+                    texto: 'Mi auto favorito de todos los tiempos. Lo deseo',
                     imagenPerfil:''
-                }
+                },
+                {
+                    usuario: 'tomas999',
+                    texto: 'Hermosa carroceria',
+                    imagenPerfil:''
+                },
+                {
+                    usuario: 'hola123',
+                    texto: 'simplemente una obra de arte',
+                    imagenPerfil:''
+                },
+                {
+                    usuario: 'manugalu',
+                    texto: 'A que velocidad llega?',
+                    imagenPerfil:''
+                },
+                
             ]
         },
         {
-            nombre: 'Producto 8',
-            descripcion: 'Descripcion del producto 8',
-            imagen: '',
+            nombre: 'Lotus Espirit',
+            descripcion: 'El Lotus Esprit es un deportivo británico de diseño angular y motor central, famoso por su ligereza y agilidad.',
+            imagen: '/img/lotusespirit.jpg',
             comentarios:[
                 {
-                    usuario: 'nico300',
-                    texto: 'Buen producto',
+                    usuario: 'Lopez',
+                    texto: 'Lindo carro',
                     imagenPerfil:''
-                }
+                },
+                {
+                    usuario: 'elperro',
+                    texto: 'soy un perro',
+                    imagenPerfil:''
+                },
+                {
+                    usuario: 'tomastomytom',
+                    texto: 'Hermoso. Mi abuelo tenia uno',
+                    imagenPerfil:''
+                },
+                {
+                    usuario: 'rudecindo',
+                    texto: 'Me gusto mucho',
+                    imagenPerfil:''
+                },
             ]
         },
         {
-            nombre: 'Producto 9',
-            descripcion: 'Descripcion del producto 9',
-            imagen: '',
+            nombre: 'Jaguar XJ220',
+            descripcion: 'El Jaguar XJ220 es un superdeportivo británico de los 90, conocido por su diseño elegante y su velocidad extrema. Con motor V6 biturbo y tracción trasera, fue uno de los autos más rápidos de su época. del producto 9',
+            imagen: '/img/jaguaxj220.jpg',
             comentarios:[
                 {
-                    usuario: 'nico300',
-                    texto: 'Buen producto',
+                    usuario: 'lucas tauzig',
+                    texto: 'Que lindo auto',
                     imagenPerfil:''
-                }
+                },
+                {
+                    usuario: 'pelon',
+                    texto: 'Hermoso!',
+                    imagenPerfil:''
+                },
+                {
+                    usuario: 'el gusano',
+                    texto: 'Con ese no tengo que saltar vallas, voy rapidisimo!',
+                    imagenPerfil:''
+                },
+                {
+                    usuario: 'thomas',
+                    texto: 'Que pedazo de auto por dios',
+                    imagenPerfil:''
+                },
             ]
         },
         {
-            nombre: 'Producto 10',
-            descripcion: 'Descripcion del producto 10',
-            imagen: '',
+            nombre: 'BMW 507',
+            descripcion: 'Es un roadster de lujo de los años ‘50, con diseño elegante y motor V8. Exclusivo y refinado, fue pensado para competir con los deportivos italianos y se convirtió en una joya codiciada por coleccionistas.',
+            imagen: '/img/bmw507.jpg',
             comentarios:[
                 {
-                    usuario: 'nico300',
-                    texto: 'Buen producto',
+                    usuario: 'The lord',
+                    texto: 'Incredible car. Really amazing',
                     imagenPerfil:''
-                }
+                },
+                {
+                    usuario: 'el chacal',
+                    texto: 'que preciosidad',
+                    imagenPerfil:''
+                },
+                {
+                    usuario: 'carlitos',
+                    texto: 'Esta bueno',
+                    imagenPerfil:''
+                },
+                {
+                    usuario: 'estupinian',
+                    texto: 'me gusto este en particular',
+                    imagenPerfil:''
+                },
             ]
         },
     ]
