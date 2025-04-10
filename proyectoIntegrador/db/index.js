@@ -34,6 +34,11 @@ const datos = {
                     texto: 'Pero que bicho...',
                     imagenPerfil:''
                 },
+                {
+                    usuario: 'pablito',
+                    texto: 'Pero que bicho...',
+                    imagenPerfil:''
+                },
             ]
         },
         {
