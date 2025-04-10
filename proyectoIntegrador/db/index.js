@@ -120,7 +120,7 @@ const datos = {
         {
             nombre: 'Ferrari F40',
             descripcion: 'La Ferrari F40 es un superdeportivo icónico lanzado en 1987, diseñado para celebrar los 40 años de Ferrari. Con motor V8 biturbo, chasis liviano y diseño agresivo',
-            imagen: '/img/ferrarf40.jpg',
+            imagen: '/img/f40.jpg',
             comentarios:[
                 {
                     usuario: 'alan_pato',
@@ -229,7 +229,7 @@ const datos = {
         {
             nombre: 'Jaguar XJ220',
             descripcion: 'El Jaguar XJ220 es un superdeportivo británico de los 90, conocido por su diseño elegante y su velocidad extrema. Con motor V6 biturbo y tracción trasera, fue uno de los autos más rápidos de su época. del producto 9',
-            imagen: '/img/jaguaxj220.jpg',
+            imagen: '/img/jaguarxj220.jpg',
             comentarios:[
                 {
                     usuario: 'lucas tauzig',
