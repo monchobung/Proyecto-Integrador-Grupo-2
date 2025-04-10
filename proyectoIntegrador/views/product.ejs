@@ -9,45 +9,73 @@
 	
 
 
-  <div class="titulo-producto">
-    <h2><%=productos[0].nombre%></h2>
-    <p class="editar">Editar</p>
-  </div>
+	<div class="container products-wrapper">
+		<div class="d-flex align-items-center">
+			<h2 class="products-title"><%=productos[0].nombre%></h2> 
+			<p class="product-detail-description">
+				<a href="product-add.html">Editar</a>
+			</p>
+		</div>
+		<div class="product-detail">
+			<div class="row">
+				<article class="col-12 col-lg-8 product-detail-info">
+					<img src="/img/porsche.jpg" alt="" class="product-detail-img">
+					<p class="product-detail-description">
+						<%=productos[0].descripcion%></p>
+				</article>
+				<div class="col-12 col-lg-4">
+					<section class="comments">
+						<article>
+							<img src="https://via.placeholder.com/35" alt="">
+							<div class="data">
+								<p class="user">
+								<strong> <a href="profile.html"><%=productos[0].comentarios[0].usuario%>: </a> </strong>
+								<%=productos[0].comentarios[0].texto%></p>
+							</div>
+						</article>
+						<article>
+							<img src="https://via.placeholder.com/35" alt="">
+							<div class="data">
+								<p class="user">
+									<strong> <a href="profile.html"><%=productos[0].comentarios[1].usuario%>: </a> </strong>
+									<%=productos[0].comentarios[1].texto%></p>
+							</div>
+						</article>
+						<article>
+							<img src="https://via.placeholder.com/35" alt="">
+							<div class="data">
+								<p class="user">
+									<strong> <a href="profile.html"><%=productos[0].comentarios[2].usuario%>: </a> </strong>
+									<%=productos[0].comentarios[2].texto%></p>
+							</div>
+						</article>
+						<article>
+							<img src="https://via.placeholder.com/35" alt="">
+							<div class="data">
+								<p class="user">
+									<strong> <a href="profile.html"><%=productos[0].comentarios[3].usuario%>: </a> </strong>
+									<%=productos[0].comentarios[3].texto%></p>
+							</div>
+						</article>
+						<article>
+							<img src="https://via.placeholder.com/35" alt="">
+							<div class="data">
+								<p class="user">
+									<strong> <a href="profile.html"><%=productos[0].comentarios[4].usuario%>: </a> </strong>
+									<%=productos[0].comentarios[4].texto%></p>
+							</div>
+						</article>
 
-
-  <div class="contenedor">
-    <div class="producto">
-      <div class="info-producto">
-        <div class="imagen-producto">
-          <img src="/img/porsche.jpg" alt="Imagen del producto">
-        </div>
-
-        <p class="descripcion">
-			<%=productos[0].descripcion%>
-        </p>
-      </div>
-    </div>
-
-    <div class="comentarios">
-      <div class="comentario">
-        <p><a><%=productos[0].comentarios[0].usuario%>:</a> <%=productos[0].comentarios[0].texto%></p>
-      </div>
-      <div class="comentario">
-        <p><a><%= productos[0].comentarios[1].usuario %>:</a> <%=productos[0].comentarios[1].texto%></p>
-      </div>
-      <div class="comentario">
-        <p><a><%= productos[0].comentarios[2].usuario %>: </a> <%=productos[0].comentarios[2].texto%></p>
-      </div>
-      <div class="comentario">
-        <p><a><%= productos[0].comentarios[3].usuario %>: </a> <%=productos[0].comentarios[3].texto%></p>
-      </div>
-
-      <div class="formulario-comentarios">
-        <input type="text" placeholder="Agregar comentario">
-        <button>AGREGAR COMENTARIO</button>
-      </div>
-    </div>
-  </div>
+					</section>
+					<form class="form" action="" method="POST">
+						<input class="form-input" type="text" value="" placeholder="Agregar comentario">
+						<button type="submit" class="buy-now-button">AGREGAR COMENTARIO</button>
+					</form>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 	<!-- footer -->
