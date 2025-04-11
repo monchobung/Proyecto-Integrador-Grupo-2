@@ -191,7 +191,7 @@ hr {
 }
 
 .product-box {
-  background-color: #ffffff;
+  background-color: #818080;
   border-radius: 5px;
   overflow: hidden;
   transition: 300ms;
@@ -330,7 +330,7 @@ hr {
   background-color: #ffffff;
   border-radius: 8px;
   overflow: hidden;
-  color: 
+  color:black;
 }
 
 .product-detail-img {
