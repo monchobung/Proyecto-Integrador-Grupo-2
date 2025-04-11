@@ -11,7 +11,7 @@ const loginRouter = require('./routes/login')
 const productoRouter = require('./routes/producto')
 const perfilRouter = require('./routes/perfil')
 const searchRouter = require('./routes/search')
-var productadd = require('./routes/productadd');
+var productadd = require('./routes/productAdd');
 var app = express();
 
 // view engine setup
