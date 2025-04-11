@@ -17,28 +17,28 @@ const datos = {
                 {
                     usuario: 'nico300',
                     texto: 'Buen producto',
-                    imagenPerfil:''
+                    imagenPerfil:'/img/perfil1.jpg'
                 },
                 {
                     usuario: 'juanceto09',
                     texto: 'Que nave',
-                    imagenPerfil:''
+                    imagenPerfil:'/img/perfil2.jpg'
                 },
                 {
                     usuario: 'fanautos',
                     texto: 'El auto de mis sueños',
-                    imagenPerfil:''
+                    imagenPerfil:'/img/perfilfoto.jpg'
                 },
                 {
                     usuario: 'pedro123',
                     texto: 'Pero que bicho...',
-                    imagenPerfil:''
+                    imagenPerfil:'/img/perfil4.jpg'
                 },
                 {
                     usuario: 'pablito',
-                    texto: 'Pero que bicho...',
-                    imagenPerfil:''
-                },
+                    texto: 'Que lindo que es!',
+                    imagenPerfil:'/img/perfil5.jpg'
+                }
             ]
         },
         {
@@ -47,25 +47,30 @@ const datos = {
             imagen: '/img/mercedes300sl.jpg',
             comentarios:[
                 {
-                    usuario: 'toui ',
-                    texto: 'ayy que lindo',
-                    imagenPerfil:''
+                    usuario: 'nico300',
+                    texto: 'Buen producto',
+                    imagenPerfil:'/img/perfil1.jpg'
                 },
                 {
-                    usuario: 'johnlenon',
-                    texto: 'que lo pario...',
-                    imagenPerfil:''
+                    usuario: 'juanceto09',
+                    texto: 'Que nave',
+                    imagenPerfil:'/img/perfil2.jpg'
                 },
                 {
-                    usuario: 'lucashabib',
-                    texto: 'que locura',
-                    imagenPerfil:''
+                    usuario: 'fanautos',
+                    texto: 'El auto de mis sueños',
+                    imagenPerfil:'/img/perfilfoto.jpg'
                 },
                 {
-                    usuario: 'ruderoca',
-                    texto: 'faa mi viejo tenia uno',
-                    imagenPerfil:''
+                    usuario: 'pedro123',
+                    texto: 'Pero que bicho...',
+                    imagenPerfil:'/img/perfil4.jpg'
                 },
+                {
+                    usuario: 'pablito',
+                    texto: 'Que lindo que es!',
+                    imagenPerfil:'/img/perfil5.jpg'
+                }
             ]
         },
         {
@@ -74,25 +79,30 @@ const datos = {
             imagen: '/img/mc12.jpg',
             comentarios:[
                 {
-                    usuario: 'matiromig',
-                    texto: 'Precio?',
-                    imagenPerfil:''
+                    usuario: 'nico300',
+                    texto: 'Buen producto',
+                    imagenPerfil:'/img/perfil1.jpg'
                 },
                 {
-                    usuario: 'themoncho96',
-                    texto: 'Increible',
-                    imagenPerfil:''
+                    usuario: 'juanceto09',
+                    texto: 'Que nave',
+                    imagenPerfil:'/img/perfil2.jpg'
                 },
                 {
-                    usuario: 'ojodeindigo',
-                    texto: 'Que motor tiene?',
-                    imagenPerfil:''
+                    usuario: 'fanautos',
+                    texto: 'El auto de mis sueños',
+                    imagenPerfil:'/img/perfilfoto.jpg'
                 },
                 {
-                    usuario: 'Chilitatan',
-                    texto: 'UFFFF!',
-                    imagenPerfil:''
+                    usuario: 'pedro123',
+                    texto: 'Pero que bicho...',
+                    imagenPerfil:'/img/perfil4.jpg'
                 },
+                {
+                    usuario: 'pablito',
+                    texto: 'Que lindo que es!',
+                    imagenPerfil:'/img/perfil5.jpg'
+                }
             ]
         },
         {
@@ -101,25 +111,30 @@ const datos = {
             imagen: '/img/jaguar.jpg',
             comentarios:[
                 {
-                    usuario: 'Felipe Zimer',
-                    texto: 'Naa, increible',
-                    imagenPerfil:''
+                    usuario: 'nico300',
+                    texto: 'Buen producto',
+                    imagenPerfil:'/img/perfil1.jpg'
                 },
                 {
-                    usuario: 'Bauti Canoa',
-                    texto: 'del mejor año',
-                    imagenPerfil:''
+                    usuario: 'juanceto09',
+                    texto: 'Que nave',
+                    imagenPerfil:'/img/perfil2.jpg'
                 },
                 {
-                    usuario: 'beltran pt',
-                    texto: 'de los mejores modelos!',
-                    imagenPerfil:''
+                    usuario: 'fanautos',
+                    texto: 'El auto de mis sueños',
+                    imagenPerfil:'/img/perfilfoto.jpg'
                 },
                 {
-                    usuario: 'Kiruff45',
-                    texto: 'ojala poder tener uno de esos',
-                    imagenPerfil:''
+                    usuario: 'pedro123',
+                    texto: 'Pero que bicho...',
+                    imagenPerfil:'/img/perfil4.jpg'
                 },
+                {
+                    usuario: 'pablito',
+                    texto: 'Que lindo que es!',
+                    imagenPerfil:'/img/perfil5.jpg'
+                }
             ]
         },
         {
@@ -128,24 +143,29 @@ const datos = {
             imagen: '/img/f40.jpg',
             comentarios:[
                 {
-                    usuario: 'alan_pato',
-                    texto: 'Mi auto favorito!',
-                    imagenPerfil:''
+                    usuario: 'nico300',
+                    texto: 'Buen producto',
+                    imagenPerfil:'/img/perfil1.jpg'
                 },
                 {
-                    usuario: 'nicopopi',
-                    texto: 'Es realmente hermoso. Una obra de arte',
-                    imagenPerfil:''
+                    usuario: 'juanceto09',
+                    texto: 'Que nave',
+                    imagenPerfil:'/img/perfil2.jpg'
                 },
                 {
-                    usuario: 'chama',
-                    texto: 'Que lindo ese color rojo...',
-                    imagenPerfil:''
+                    usuario: 'fanautos',
+                    texto: 'El auto de mis sueños',
+                    imagenPerfil:'/img/perfilfoto.jpg'
                 },
                 {
-                    usuario: 'leomessi',
-                    texto: 'Yo tengo una de esas en barcelona',
-                    imagenPerfil:''
+                    usuario: 'pedro123',
+                    texto: 'Pero que bicho...',
+                    imagenPerfil:'/img/perfil4.jpg'
+                },
+                {
+                    usuario: 'pablito',
+                    texto: 'Que lindo que es!',
+                    imagenPerfil:'/img/perfil5.jpg'
                 }
             ]
         },
@@ -155,25 +175,30 @@ const datos = {
             imagen: '/img/countach.jpg',
             comentarios:[
                 {
-                    usuario: 'Frangomez',
-                    texto: 'Ese es el auto que se uso en el Lobo de Wall Street?',
-                    imagenPerfil:''
+                    usuario: 'nico300',
+                    texto: 'Buen producto',
+                    imagenPerfil:'/img/perfil1.jpg'
                 },
                 {
-                    usuario: 'marcosgubi',
-                    texto: 'Me gusta mas ferrar que lamborghini',
-                    imagenPerfil:''
+                    usuario: 'juanceto09',
+                    texto: 'Que nave',
+                    imagenPerfil:'/img/perfil2.jpg'
                 },
                 {
-                    usuario: 'monchito',
-                    texto: 'Lindo fierro che',
-                    imagenPerfil:''
+                    usuario: 'fanautos',
+                    texto: 'El auto de mis sueños',
+                    imagenPerfil:'/img/perfilfoto.jpg'
                 },
                 {
-                    usuario: 'ramayo',
-                    texto: 'Pfff. Hermoso',
-                    imagenPerfil:''
+                    usuario: 'pedro123',
+                    texto: 'Pero que bicho...',
+                    imagenPerfil:'/img/perfil4.jpg'
                 },
+                {
+                    usuario: 'pablito',
+                    texto: 'Que lindo que es!',
+                    imagenPerfil:'/img/perfil5.jpg'
+                }
             ]
         },
         {
@@ -182,25 +207,30 @@ const datos = {
             imagen: '/img/bugattieb100.jpg',
             comentarios:[
                 {
-                    usuario: 'licha',
-                    texto: 'Mi auto favorito de todos los tiempos. Lo deseo',
-                    imagenPerfil:''
+                    usuario: 'nico300',
+                    texto: 'Buen producto',
+                    imagenPerfil:'/img/perfil1.jpg'
                 },
                 {
-                    usuario: 'tomas999',
-                    texto: 'Hermosa carroceria',
-                    imagenPerfil:''
+                    usuario: 'juanceto09',
+                    texto: 'Que nave',
+                    imagenPerfil:'/img/perfil2.jpg'
                 },
                 {
-                    usuario: 'hola123',
-                    texto: 'simplemente una obra de arte',
-                    imagenPerfil:''
+                    usuario: 'fanautos',
+                    texto: 'El auto de mis sueños',
+                    imagenPerfil:'/img/perfilfoto.jpg'
                 },
                 {
-                    usuario: 'manugalu',
-                    texto: 'A que velocidad llega?',
-                    imagenPerfil:''
+                    usuario: 'pedro123',
+                    texto: 'Pero que bicho...',
+                    imagenPerfil:'/img/perfil4.jpg'
                 },
+                {
+                    usuario: 'pablito',
+                    texto: 'Que lindo que es!',
+                    imagenPerfil:'/img/perfil5.jpg'
+                }
                 
             ]
         },
@@ -210,25 +240,30 @@ const datos = {
             imagen: '/img/lotusespirit.jpg',
             comentarios:[
                 {
-                    usuario: 'Lopez',
-                    texto: 'Lindo carro',
-                    imagenPerfil:''
+                    usuario: 'nico300',
+                    texto: 'Buen producto',
+                    imagenPerfil:'/img/perfil1.jpg'
                 },
                 {
-                    usuario: 'elperro',
-                    texto: 'soy un perro',
-                    imagenPerfil:''
+                    usuario: 'juanceto09',
+                    texto: 'Que nave',
+                    imagenPerfil:'/img/perfil2.jpg'
                 },
                 {
-                    usuario: 'tomastomytom',
-                    texto: 'Hermoso. Mi abuelo tenia uno',
-                    imagenPerfil:''
+                    usuario: 'fanautos',
+                    texto: 'El auto de mis sueños',
+                    imagenPerfil:'/img/perfilfoto.jpg'
                 },
                 {
-                    usuario: 'rudecindo',
-                    texto: 'Me gusto mucho',
-                    imagenPerfil:''
+                    usuario: 'pedro123',
+                    texto: 'Pero que bicho...',
+                    imagenPerfil:'/img/perfil4.jpg'
                 },
+                {
+                    usuario: 'pablito',
+                    texto: 'Que lindo que es!',
+                    imagenPerfil:'/img/perfil5.jpg'
+                }
             ]
         },
         {
@@ -237,25 +272,30 @@ const datos = {
             imagen: '/img/jaguarxj220.jpg',
             comentarios:[
                 {
-                    usuario: 'lucas tauzig',
-                    texto: 'Que lindo auto',
-                    imagenPerfil:''
+                    usuario: 'nico300',
+                    texto: 'Buen producto',
+                    imagenPerfil:'/img/perfil1.jpg'
                 },
                 {
-                    usuario: 'pelon',
-                    texto: 'Hermoso!',
-                    imagenPerfil:''
+                    usuario: 'juanceto09',
+                    texto: 'Que nave',
+                    imagenPerfil:'/img/perfil2.jpg'
                 },
                 {
-                    usuario: 'el gusano',
-                    texto: 'Con ese no tengo que saltar vallas, voy rapidisimo!',
-                    imagenPerfil:''
+                    usuario: 'fanautos',
+                    texto: 'El auto de mis sueños',
+                    imagenPerfil:'/img/perfilfoto.jpg'
                 },
                 {
-                    usuario: 'thomas',
-                    texto: 'Que pedazo de auto por dios',
-                    imagenPerfil:''
+                    usuario: 'pedro123',
+                    texto: 'Pero que bicho...',
+                    imagenPerfil:'/img/perfil4.jpg'
                 },
+                {
+                    usuario: 'pablito',
+                    texto: 'Que lindo que es!',
+                    imagenPerfil:'/img/perfil5.jpg'
+                }
             ]
         },
         {
@@ -264,25 +304,30 @@ const datos = {
             imagen: '/img/bmw507.jpg',
             comentarios:[
                 {
-                    usuario: 'The lord',
-                    texto: 'Incredible car. Really amazing',
-                    imagenPerfil:''
+                    usuario: 'nico300',
+                    texto: 'Buen producto',
+                    imagenPerfil:'/img/perfil1.jpg'
                 },
                 {
-                    usuario: 'el chacal',
-                    texto: 'que preciosidad',
-                    imagenPerfil:''
+                    usuario: 'juanceto09',
+                    texto: 'Que nave',
+                    imagenPerfil:'/img/perfil2.jpg'
                 },
                 {
-                    usuario: 'carlitos',
-                    texto: 'Esta bueno',
-                    imagenPerfil:''
+                    usuario: 'fanautos',
+                    texto: 'El auto de mis sueños',
+                    imagenPerfil:'/img/perfilfoto.jpg'
                 },
                 {
-                    usuario: 'estupinian',
-                    texto: 'me gusto este en particular',
-                    imagenPerfil:''
+                    usuario: 'pedro123',
+                    texto: 'Pero que bicho...',
+                    imagenPerfil:'/img/perfil4.jpg'
                 },
+                {
+                    usuario: 'pablito',
+                    texto: 'Que lindo que es!',
+                    imagenPerfil:'/img/perfil5.jpg'
+                }
             ]
         },
     ]
