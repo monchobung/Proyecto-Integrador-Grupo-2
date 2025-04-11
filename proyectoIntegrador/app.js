@@ -11,6 +11,7 @@ const loginRouter = require('./routes/login')
 const productoRouter = require('./routes/producto')
 const perfilRouter = require('./routes/perfil')
 const searchRouter = require('./routes/search')
+var productadd = require('./routes/productadd');
 var app = express();
 
 // view engine setup
@@ -30,7 +31,7 @@ app.use('/login', loginRouter)
 app.use('/producto', productoRouter)
 app.use('/perfil', perfilRouter) 
 app.use('/search', searchRouter) 
-
+app.use('/productadd', productadd);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
