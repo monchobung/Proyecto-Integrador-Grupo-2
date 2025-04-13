@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
-<!-- Include Head -->
+  <!-- Include Head -->
+  <%- include('partials/head') %>
+  <body>
+    <!-- Header -->
+    <%- include('partials/header') %>
+    <!-- /Header -->
 
-<%- include('partials/head') %>
-<body>
-	<!-- Header -->
-<%- include('partials/header') %>
-	<!-- /Header -->
+    <!-- Novedades -->
+    <div class="container products-wrapper">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="products-title">Registrarse</h2>
+        </div>
 
-	<!-- Novedades -->
-	<div class="container products-wrapper">
-		<div class="row">
-			<div class="col-12">
-				<h2 class="products-title">Registrate</h2>
-			</div>
-			<!-- Show the "ultimos" products -->
-			<h2 class="col-12"> <i>///////////////////////////////////////// <br> Acá va el formulario de registro. <br>
-			Debe cumplir con los puntos de la consigna y ser coherente con la tabla de la base de datos <br>
-			Eliminen estás líneas y coloquen el formulario. <br>
-			Recuerden todo lo que necesita tanto la etiqueta form como los campos input para operar correctamtente</i> <br>
-			////////////////
-			</h2>
+        <div class="contenedor-login">
+          <form action="/" method="get" class="formulario-login">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
 
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required>
 
-	<!-- footer -->
-	<%- include('partials/footer') %>
-	<!-- /footer -->
-</body>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
 
+            <label for="birthdate">Fecha de nacimiento:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <label for="document">Numero de Documento:</label>
+            <input type="number" id="document" name="document" required>
+
+            <label for="profilePic">Foto de perfil (URL):</label>
+            <input type="text" id="profilePic" name="profilePic" required>
+
+            <button type="submit">Registrate</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <%- include('partials/footer') %>
+    <!-- /footer -->
+  </body>
 </html>
