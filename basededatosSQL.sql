@@ -45,3 +45,47 @@ INSERT INTO productos (usuario_id, imagen, nombre_producto, descripcion) VALUES
 (4, 'auto8.jpg', 'Auto8', 'Descripcion de auto 8'),
 (5, 'auto9.jpg', 'Auto9', 'Descripcion de auto 9'),
 (5, 'auto10.jpg', 'Auto10', 'Descripcion de auto 10');
+
+CREATE TABLE comentarios (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    producto_id INT,
+    usuario_id INT,
+    texto VARCHAR(300),
+    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    deletedAt TIMESTAMP NULL ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (producto_id) REFERENCES productos(id),
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+);
+
+INSERT INTO comentarios (producto_id, usuario_id, texto) VALUES
+(1, 2, 'Comentario 1'),
+(1, 3, 'Comentario 2'),
+(1, 4, 'Comentario 3'),
+(2, 2, 'Comentario 4'),
+(2, 5, 'Comentario 5'),
+(2, 1, 'Comentario 6'),
+(3, 4, 'Comentario 7'),
+(3, 5, 'Comentario 8'),
+(3, 1, 'Comentario 9'),
+(4, 3, 'Comentario 10'),
+(4, 1, 'Comentario 11'),
+(4, 2, 'Comentario 12'),
+(5, 2, 'Comentario 13'),
+(5, 4, 'Comentario 14'),
+(5, 5, 'Comentario 15'),
+(6, 1, 'Comentario 16'),
+(6, 2, 'Comentario 17'),
+(6, 3, 'Comentario 18'),
+(7, 1, 'Comentario 19'),
+(7, 5, 'Comentario 20'),
+(7, 2, 'Comentario 21'),
+(8, 3, 'Comentario 22'),
+(8, 1, 'Comentario 23'),
+(8, 4, 'Comentario 24'),
+(9, 2, 'Comentario 25'),
+(9, 3, 'Comentario 26'),
+(9, 1, 'Comentario 27'),
+(10, 4, 'Comentario 28'),
+(10, 5, 'Comentario 29'),
+(10, 2, 'Comentario 30');
