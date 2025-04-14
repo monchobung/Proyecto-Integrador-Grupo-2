@@ -1,7 +1,10 @@
 const controllerRegistracion = {
-    index: function (req, res) {
-        res.render('register')
+    Registro: function (req, res) {
+        res.render('register');
     },
-}
+    Login: function (req, res) {
+        res.render('login');
+    }
+};
 
-module.exports = controllerRegistracion
+module.exports = controllerRegistracion;
