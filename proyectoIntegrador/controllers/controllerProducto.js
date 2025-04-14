@@ -20,6 +20,13 @@ const controllerProducto = {
         res.render('productadd', {
             usuario: datos.usuario
         });
+    },
+
+    detalle: function (req, res) {
+        const id = req.params.id; 
+        res.render('product', {
+            productos: datos.productos
+        });
     }
 };
 
