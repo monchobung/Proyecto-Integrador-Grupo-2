@@ -16,8 +16,9 @@
 
 /*====== Basics ======*/
 * {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   box-sizing: border-box;
-  font-family:'Raleway', sans-serif;
+  
 }
 
 html,
@@ -25,11 +26,12 @@ body {
   min-height: 100vh;
   margin: 0;
   font-size: 10px;
+  
   ;
 }
 
 body {
-  font-family: var(--base-font-family);
+  
   font-weight: 300;
   background-color: rgb(77, 74, 74);
 }
@@ -88,6 +90,7 @@ hr {
   font-size: 1.5em;
   margin-top: 20px;
   text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .search-form {
@@ -128,6 +131,7 @@ hr {
   padding: 5px 15px;
   display: block;
   margin: 20px auto 0;
+  
 }
 
 .main-navbar {
@@ -138,6 +142,7 @@ hr {
 .left-navbar,
 .right-navbar {
   font-size: 1.5em;
+  
   ;
 }
 
@@ -158,6 +163,7 @@ hr {
   display: block;
   padding: 5px 0;
   border-bottom: solid 1px var(--gray);
+  text-decoration: underline;
   
 }
 
@@ -189,12 +195,14 @@ hr {
   position: relative;
   margin-top: 30px;
   margin-bottom: 30px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .products-title {
   font-size: 2.4em;
   font-weight: 400;
   color: white;
+  font-family: 'times new roman';
 }
 
 .product-box {
@@ -203,6 +211,7 @@ hr {
   overflow: hidden;
   transition: 300ms;
   margin: 20px 0;
+  
 }
 
 .product-box a {
@@ -223,14 +232,17 @@ hr {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  color: #ffffff
+  color: #ffffff;
+  
+  
 }
 
 .product-box_data h2 {
   font-size: 2.4em;
   font-weight: 300;
   margin: 0;
-  color: #ffffff
+  color: #ffffff;
+  
 }
 
 .product-box_data span {
@@ -286,6 +298,7 @@ hr {
   transform: rotate(360deg);
   box-shadow: 0 0 5px var(--green);
 }
+
 
 /*====== Footer ======*/
 .main-footer {
@@ -597,4 +610,8 @@ textarea.form-input {
   background-color: #ccc;
   border: none;
   font-weight: bold;
+}
+
+.vinculo-editar{
+  text-decoration: underline;
 }
