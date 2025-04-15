@@ -39,121 +39,31 @@
 	<div class="container products-wrapper">
 		<div class="row">
 			<div class="col-12">
-				<h2 class="products-title">Mis productos</h2>
+				<h2 class="products-title">Productos</h2>
 			</div>
-			<!-- Show mis productos -->
-			<div class="col-12 col-sm-6 col-lg-3">
-				<section class="product-box">
-					<a href="product.html">
-						<figure class="product-box_image">
-							<img src="/img/porsche.jpg" alt="cafetera moulinex">
-						</figure>
-						<article class="product-box_data">
-							<h2><%= productos[0].nombre %></h2>
-							<p><%= productos[0].descripcion%></p>
-							<p><%= productos[0].comentarios[0].usuario %>: <%= productos[0].comentarios[0].texto %></p>
-						</article>
-					</a>
-				</section>
-			</div>
-			<div class="col-12 col-sm-6 col-lg-3">
-				<section class="product-box">
-					<a href="product.html">
-						<figure class="product-box_image">
-							<img src="/img/mercedes300sl.jpg" alt="cafetera moulinex">
-						</figure>
-						<article class="product-box_data">
-							<h2><%= productos[1].nombre %></h2>
-							<p><%= productos[1].descripcion%></p>
-							<p><%= productos[1].comentarios[0].usuario %>: <%= productos[1].comentarios[0].texto %></p>
-						</article>
-					</a>
-				</section>
-			</div>
-			<div class="col-12 col-sm-6 col-lg-3">
-				<section class="product-box">
-					<a href="product.html">
-						<figure class="product-box_image">
-							<img src="/img/mc12.jpg" alt="cafetera moulinex">
-						</figure>
-						<article class="product-box_data">
-							<h2><%= productos[2].nombre %></h2>
-							<p><%= productos[2].descripcion%></p>
-							<p><%= productos[2].comentarios[0].usuario %>: <%= productos[2].comentarios[0].texto %></p>
-						</article>
-					</a>
-				</section>
-			</div>
-			<div class="col-12 col-sm-6 col-lg-3">
-				<section class="product-box">
-					<a href="product.html">
-						<figure class="product-box_image">
-							<img src="/img/jaguar.jpg" alt="cafetera moulinex">
-						</figure>
-						<article class="product-box_data">
-							<h2><%= productos[3].nombre %></h2>
-							<p><%= productos[3].descripcion%></p>
-							<p><%= productos[3].comentarios[0].usuario %>: <%= productos[3].comentarios[0].texto %></p>
-						</article>
-					</a>
-				</section>
-			</div>
-			<div class="col-12 col-sm-6 col-lg-3">
-				<section class="product-box">
-					<a href="product.html">
-						<figure class="product-box_image">
-							<img src="/img/f40.jpg" alt="cafetera moulinex">
-						</figure>
-						<article class="product-box_data">
-							<h2><%= productos[4].nombre %></h2>
-							<p><%= productos[4].descripcion%></p>
-							<p><%= productos[4].comentarios[0].usuario %>: <%= productos[4].comentarios[0].texto %></p>
-						</article>
-					</a>
-				</section>
-			</div>
-			<div class="col-12 col-sm-6 col-lg-3">
-				<section class="product-box">
-					<a href="product.html">
-						<figure class="product-box_image">
-							<img src="/img/countach.jpg" alt="cafetera moulinex">
-						</figure>
-						<article class="product-box_data">
-							<h2><%= productos[5].nombre %></h2>
-							<p><%= productos[5].descripcion%></p>
-							<p><%= productos[5].comentarios[0].usuario %>: <%= productos[5].comentarios[0].texto %></p>
-						</article>
-					</a>
-				</section>
-			</div>
-			<div class="col-12 col-sm-6 col-lg-3">
-				<section class="product-box">
-					<a href="product.html">
-						<figure class="product-box_image">
-							<img src="/img/bugattieb100.jpg" alt="cafetera moulinex">
-						</figure>
-						<article class="product-box_data">
-							<h2><%= productos[6].nombre %></h2>
-							<p><%= productos[6].descripcion%></p>
-							<p><%= productos[6].comentarios[0].usuario %>: <%= productos[6].comentarios[0].texto %></p>
-						</article>
-					</a>
-				</section>
-			</div>
-			<div class="col-12 col-sm-6 col-lg-3">
-				<section class="product-box">
-					<a href="product.html">
-						<figure class="product-box_image">
-							<img src="/img/lotusespirit.jpg" alt="cafetera moulinex">
-						</figure>
-						<article class="product-box_data">
-							<h2><%= productos[7].nombre %></h2>
-							<p><%= productos[7].descripcion%></p>
-							<p><%= productos[7].comentarios[0].usuario %>: <%= productos[7].comentarios[0].texto %></p>
-						</article>
-					</a>
-				</section>
-			</div>
+
+			<% for (let i = 0; i < productos.length; i++) { %>
+				<div class="col-12 col-sm-6 col-lg-3">
+					<section class="product-box">
+						<a href="/producto">
+							<div class="product-box_image">
+								<img src="<%= productos[i].imagen %>" alt="<%= productos[i].nombre %>">
+							</div>
+							<article class="product-box_data">
+								<h2><%= productos[i].nombre %></h2>
+								<p><%= productos[i].descripcion %></p>
+								<p>Comentarios:</p>
+								<p><%= productos[i].comentarios[0].usuario %>: <%= productos[i].comentarios[0].texto %></p>
+								<p><%= productos[i].comentarios[1].usuario %>: <%= productos[i].comentarios[1].texto %></p>
+								<p><%= productos[i].comentarios[2].usuario %>: <%= productos[i].comentarios[2].texto %></p>
+								<p><%= productos[i].comentarios[3].usuario %>: <%= productos[i].comentarios[3].texto %></p>
+								<p><%= productos[i].comentarios[4].usuario %>: <%= productos[i].comentarios[4].texto %></p>
+							</article>
+						</a>
+					</section>
+				</div>
+			<% } %>
+
 		</div>
 	</div>
 	<!-- /Mis productos -->
