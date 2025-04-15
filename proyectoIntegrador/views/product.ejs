@@ -6,12 +6,10 @@
 <body>
 
 	<%- include('partials/header') %>
-	
-
 
 	<div class="container products-wrapper">
 		<div class="d-flex align-items-center">
-			<h2 class="products-title"><%=productos[0].nombre%></h2> 
+			<h2 class="products-title"><%= productos[0].nombre %></h2> 
 			<p class="product-detail-description">
 				<a href="/productadd" class="vinculo-editar">Editar</a>
 			</p>
@@ -19,54 +17,28 @@
 		<div class="product-detail">
 			<div class="row">
 				<article class="col-12 col-lg-8 product-detail-info">
-					<img src="/img/porsche.jpg" alt="" class="product-detail-img">
+					<img src="<%= productos[0].imagen %>" alt="" class="product-detail-img">
 					<p class="product-detail-description">
-						<%=productos[0].descripcion%></p>
+						<%= productos[0].descripcion %>
+					</p>
 				</article>
 				<div class="col-12 col-lg-4">
 					<section class="comments">
-						<article>
-							<img src="<%= productos[0].comentarios[0].imagenPerfil %>" alt="">
-							<div class="data">
-								<p class="user">
-								<strong> <a href="profile.html"><%=productos[0].comentarios[0].usuario%>: </a> </strong>
-								<%=productos[0].comentarios[0].texto%></p>
-							</div>
-						</article>
-						<article>
-							<img src="<%= productos[0].comentarios[1].imagenPerfil %>" alt="">
-							<div class="data">
-								<p class="user">
-									<strong> <a href="profile.html"><%=productos[0].comentarios[1].usuario%>: </a> </strong>
-									<%=productos[0].comentarios[1].texto%></p>
-							</div>
-						</article>
-						<article>
-							<img src="<%= productos[0].comentarios[2].imagenPerfil %>" alt="">
-							<div class="data">
-								<p class="user">
-									<strong> <a href="profile.html"><%=productos[0].comentarios[2].usuario%>: </a> </strong>
-									<%=productos[0].comentarios[2].texto%></p>
-							</div>
-						</article>
-						<article>
-							<img src="<%= productos[0].comentarios[3].imagenPerfil %>" alt="">
-							<div class="data">
-								<p class="user">
-									<strong> <a href="profile.html"><%=productos[0].comentarios[3].usuario%>: </a> </strong>
-									<%=productos[0].comentarios[3].texto%></p>
-							</div>
-						</article>
-						<article>
-							<img src="<%= productos[0].comentarios[4].imagenPerfil %>" alt="">
-							<div class="data">
-								<p class="user">
-									<strong> <a href="profile.html"><%=productos[0].comentarios[4].usuario%>: </a> </strong>
-									<%=productos[0].comentarios[4].texto%></p>
-							</div>
-						</article>
-
+						<% for (let i = 0; i < productos[0].comentarios.length; i++) { %>
+							<article>
+								<img src="<%= productos[0].comentarios[i].imagenPerfil %>" alt="">
+								<div class="data">
+									<p class="user">
+										<strong>
+											<a href="profile.html"><%= productos[0].comentarios[i].usuario %>: </a>
+										</strong>
+										<%= productos[0].comentarios[i].texto %>
+									</p>
+								</div>
+							</article>
+						<% } %>
 					</section>
+					
 					<form class="form" action="" method="POST">
 						<input class="form-input" type="text" value="" placeholder="Agregar comentario">
 						<button type="submit" class="buy-now-button">AGREGAR COMENTARIO</button>
@@ -76,7 +48,6 @@
 			</div>
 		</div>
 	</div>
-
 
 	<!-- footer -->
 	<%- include('partials/footer') %>
