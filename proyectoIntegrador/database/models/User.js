@@ -7,12 +7,16 @@ module.exports = function(sequelize, DataTypes) {
         primaryKey: true,
         autoIncrement: true
       },
+      nombre_usuario: {
+      type: DataTypes.STRING(30),
+      allowNull: false
+      },
       email: {
         type: DataTypes.STRING(30),
         allowNull: false,
         unique: true
       },
-      contraseña: {
+      contrasena: {
         type: DataTypes.STRING(255),
         allowNull: false
       },
@@ -40,7 +44,7 @@ module.exports = function(sequelize, DataTypes) {
         as: "products",
         foreignKey: "usuario_id"
       });
-      User.hasMany(models.Comment, {
+      User.hasMany(models.Comentario, {
         as: "comentario",
         foreignKey: "usuario_id"
       });
