@@ -21,22 +21,33 @@
 					<section class="product-box">
 						<a href="/producto">
 							<div class="product-box_image">
-								<img src="<%= productos[i].imagen %>" alt="<%= productos[i].nombre %>">
+								<img src="/img/<%= productos[i].imagen %>" alt="<%= productos[i].nombre_producto %>">
 							</div>
 							<article class="product-box_data">
-								<h2><%= productos[i].nombre %></h2>
+								<h2><%= productos[i].nombre_producto %></h2>
 								<p><%= productos[i].descripcion %></p>
 								<p>Comentarios:</p>
-								<p><%= productos[i].comentarios[0].usuario %>: <%= productos[i].comentarios[0].texto %></p>
-								<p><%= productos[i].comentarios[1].usuario %>: <%= productos[i].comentarios[1].texto %></p>
-								<p><%= productos[i].comentarios[2].usuario %>: <%= productos[i].comentarios[2].texto %></p>
-								<p><%= productos[i].comentarios[3].usuario %>: <%= productos[i].comentarios[3].texto %></p>
-								<p><%= productos[i].comentarios[4].usuario %>: <%= productos[i].comentarios[4].texto %></p>
+			
+								<%
+								let count = 0;
+								for (let j = 0; j < comentarios.length; j++) {
+									if (comentarios[j].producto_id === productos[i].id) {
+										if (count < 5) {
+								%>
+											<p><%= comentarios[j].texto %></p>
+								<%
+											count++;
+										}
+									}
+								}
+								%>
+			
 							</article>
 						</a>
 					</section>
 				</div>
 			<% } %>
+			
 
 		</div>
 	</div>

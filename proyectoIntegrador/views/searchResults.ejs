@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
-<!-- Include Head -->
 <%- include('partials/head') %>
 <body>
-	<!-- Header -->
 <%- include('partials/header') %>
-	<!-- /Header -->
 
+<div class="container products-wrapper">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="products-title">Resultados para: <%= busqueda %></h2>
+            <% if (productos.length == 0) { %>
+                <p>No hay resultados</p>
+            <% } %>
+        </div>
 
-	<!-- Novedades -->
-	<div class="container products-wrapper">
-		<div class="row">
-			<div class="col-12">
-				<h2 class="products-title">Productos</h2>
-			</div>
+        <% for (let i = 0; i < productos.length; i++) { %>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <section class="product-box">
+                    <a href="/producto">
+                        <div class="product-box_image">
+                            <img src="/img/<%= productos[i].imagen %>" alt="<%= productos[i].nombre_producto %>">
+                        </div>
+                        <article class="product-box_data">
+                            <h2><%= productos[i].nombre_producto %></h2>
+                            <p><%= productos[i].descripcion %></p>
+                            <p>Comentarios:</p>
 
-			<% for (let i = 0; i < productos.length; i++) { %>
-				<div class="col-12 col-sm-6 col-lg-3">
-					<section class="product-box">
-						<a href="/producto">
-							<div class="product-box_image">
-								<img src="<%= productos[i].imagen %>" alt="<%= productos[i].nombre %>">
-							</div>
-							<article class="product-box_data">
-								<h2><%= productos[i].nombre %></h2>
-								<p><%= productos[i].descripcion %></p>
-								<p>Comentarios:</p>
-								<p><%= productos[i].comentarios[0].usuario %>: <%= productos[i].comentarios[0].texto %></p>
-								<p><%= productos[i].comentarios[1].usuario %>: <%= productos[i].comentarios[1].texto %></p>
-								<p><%= productos[i].comentarios[2].usuario %>: <%= productos[i].comentarios[2].texto %></p>
-								<p><%= productos[i].comentarios[3].usuario %>: <%= productos[i].comentarios[3].texto %></p>
-								<p><%= productos[i].comentarios[4].usuario %>: <%= productos[i].comentarios[4].texto %></p>
-							</article>
-						</a>
-					</section>
-				</div>
-			<% } %>
+                            <%
+                            let p = 0;
+                            for (let j = 0; j < comentarios.length; j++) {
+                                if (comentarios[j].producto_id == productos[i].id) {
+                                    if (p < 5) {
+                            %>
+                                        <p><%= comentarios[j].texto %></p>
+                            <%
+                                        p++;
+                                    }
+                                }
+                            }
+                            %>
+                        </article>
+                    </a>
+                </section>
+            </div>
+        <% } %>
+    </div>
+</div>
 
-		</div>
-	</div>
-
-
-	<!-- footer -->
-	<%- include('partials/footer') %>
-	<!-- /footer -->
-</body>	
+<%- include('partials/footer') %>
+</body>
 </html>
