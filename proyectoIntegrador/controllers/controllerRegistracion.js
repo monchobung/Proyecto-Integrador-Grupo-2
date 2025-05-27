@@ -32,7 +32,7 @@ const controllerRegistracion = {
                 if (usuarioExistente) {
                     return res.send("Este email ya está registrado.");
                 } else {
-                    var passwordEncriptada = bcrypt.hashSync('contrasena', 10);
+                    var passwordEncriptada = bcrypt.hashSync(contrasena, 10);
 
                     User.create({
                         nombre_usuario: usuario,
@@ -63,6 +63,34 @@ const controllerRegistracion = {
             }
         }
         return res.render("login");
+    },
+
+    ProcesarLogin: function(req, res) {
+        var email = req.body.email;
+        var contrasena = req.body.contrasena;
+
+        User.findOne({ where: { email: email } })
+            .then(function(resultado) {
+                if (resultado != null) {
+                    var check = bcrypt.compareSync(contrasena, resultado.contrasena);
+                    if (check) {
+                        req.session.userLoggeado = resultado;
+
+                        if (req.body.recordame != undefined) {
+                            res.cookie("recordame", resultado, { maxAge: 1000 * 60 * 60 });
+                        }
+
+                        return res.redirect("/");
+                    } else {
+                        return res.send("Contraseña incorrecta.");
+                    }
+                } else {
+                    return res.send("Usuario no encontrado.");
+                }
+            })
+            .catch(function(error) {
+                return res.send("Error al procesar el login.");
+            });
     }
 
 };

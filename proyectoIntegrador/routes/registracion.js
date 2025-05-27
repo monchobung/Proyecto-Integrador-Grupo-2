@@ -5,5 +5,6 @@ const controllerRegistracion = require('../controllers/controllerRegistracion');
 router.get('/registro', controllerRegistracion.Registro);
 router.get('/login', controllerRegistracion.Login);
 router.post('/registro', controllerRegistracion.ProcesarRegistro);
+router.post('/login', controllerRegistracion.ProcesarLogin);
 
 module.exports = router;
