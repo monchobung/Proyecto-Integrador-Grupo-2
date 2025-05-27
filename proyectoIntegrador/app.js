@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const registroRouter = require('./routes/registracion')
 const productoRouter = require('./routes/producto')
+const session = require('express-session');
 
 
 var app = express();
@@ -21,6 +22,24 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(session({secret: "Secret", 
+  resave: false, 
+  saveUninitialized: true}));
+
+app.use(function(req, res, next){
+  if(req.session.userLoggeado != undefined){
+    res.locals.userLoggeado = req.session.userLoggeado;
+  }
+  return next();
+});
+
+app.use(function(req, res, next){
+  if(req.cookies.recordame != undefined && req.session.userLoggeado == undefined){
+    req.session.userLoggeado = req.cookies.recordame;
+  }
+  return next();
+});
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -44,5 +63,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+const db = require('./database/models');
 
 module.exports = app;

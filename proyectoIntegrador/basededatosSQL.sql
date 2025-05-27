@@ -6,7 +6,7 @@ USE classic_motors;
 CREATE TABLE usuarios (
     id INT PRIMARY KEY AUTO_INCREMENT,
     email VARCHAR(30),
-    contraseña VARCHAR(30),
+    contrasena VARCHAR(30),
     fecha_nacimiento DATE,
     dni INT UNSIGNED,
     foto_perfil VARCHAR(100),
