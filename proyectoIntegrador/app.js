@@ -64,6 +64,4 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-const db = require('./database/models');
-
 module.exports = app;

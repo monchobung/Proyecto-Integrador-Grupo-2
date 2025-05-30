@@ -29,30 +29,33 @@
         <nav class="main-navbar">
             <ul class="left-navbar">
                 <li><a href="/">Todos los productos</a></li>
-                <!-- solo logueado <li><a href="">Cargar productos</a></li> -->
+                <% if (locals.userLoggeado != undefined) { %>
+                    <li><a href="">Cargar productos</a></li>
+                <% } %>
             </ul>
 
             <ul class="right-navbar">
-            <!-- Estos li deben verse solo si el usuario está logueado 
-                <li> 
-                    Nombre del usuario <i class="fas fa-user"></i>
-                </li>
-                <li>
-                    <form action="" method="post">
-                        <button class="logout" type="submit">
-                            Cerrar sesión <i class="fas fa-sign-in-alt"></i>
-                        </button>
-                    </form>
-                </li>
-            -->
-                <!-- Los li con register y loguin deben ocultarse si el usuario está logueado -->
-                <li>
-                    <a href="/registro">Creá tu cuenta <i class="far fa-address-card"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
-                </li>
+                <% if (locals.userLoggeado != undefined) { %>
+                    <li>
+                        <a href="/producto/perfil">
+                            <%='Bienvenido, ' + locals.userLoggeado.nombre_usuario %> <i class="fas fa-user"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <form action="" method="post">
+                            <button class="logout" type="submit">
+                                Cerrar sesión <i class="fas fa-sign-in-alt"></i>
+                            </button>
+                        </form>
+                    </li>
+                <% } else { %>
+                    <li>
+                        <a href="/registro">Creá tu cuenta <i class="far fa-address-card"></i></a>
+                    </li>
+                    <li>
+                        <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+                    </li>
+                <% } %>
             </ul>
         </nav>
     </div>
