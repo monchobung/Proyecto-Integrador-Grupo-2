@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <%- include('partials/head') %>
 <body>
 
@@ -24,31 +23,28 @@
 				</article>
 
 				<div class="col-12 col-lg-4">
+					<p class="usuariopublicacion">
+						Publicado por: 
+						<a href="/producto/perfil/<%= producto.user.id %>">
+							<%= producto.user.nombre_usuario %>
+						</a>
+					</p>
+
 					<section class="comments">
-						<%
-						for (let i = 0; i < comentarios.length; i++) {
-							if (comentarios[i].producto_id == producto.id) {
-								let nombreUsuario = '';
-								for (let j = 0; j < usuarios.length; j++) {
-									if (usuarios[j].id == comentarios[i].usuario_id) {
-										nombreUsuario = usuarios[j].nombre_usuario;
-									}
-								}
-						%>
+						<% for (let i = 0; i < producto.comentario.length; i++) { %>
 							<article>
 								<div class="data">
 									<p class="user">
 										<strong>
-											<a href="/perfil"><%= nombreUsuario %>: </a>
+											<a href="/producto/perfil/<%= producto.comentario[i].user.id %>">
+												<%= producto.comentario[i].user.nombre_usuario %>:
+											</a>
 										</strong>
-										<%= comentarios[i].texto %>
+										<%= producto.comentario[i].texto %>
 									</p>
 								</div>
 							</article>
-						<%
-							}
-						}
-						%>
+						<% } %>
 					</section>
 
 					<form class="form" action="" method="POST">
@@ -62,5 +58,5 @@
 	</div>
 
 	<%- include('partials/footer') %>
-</body>	
+</body>
 </html>

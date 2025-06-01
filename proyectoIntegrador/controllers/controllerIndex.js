@@ -2,19 +2,16 @@ const db = require('../database/models');
 const op = db.Sequelize.Op;
 
 const controllerIndex = {
-
     index: function(req, res) {
-        db.Product.findAll()
-            .then(function(productos) {
-                db.Comentario.findAll()
-                    .then(function(comentarios) {
-                        res.render('index', {
-                            title: 'Classic Motors',
-                            productos: productos,
-                            comentarios: comentarios
-                        });
-                    });
+        db.Product.findAll({
+            include: [{ association: "user" }, { association: "comentario" }]
+        })
+        .then(function(productos) {
+            res.render('index', {
+                title: 'Classic Motors',
+                productos: productos
             });
+        });
     },
 
     search: function(req, res) {
@@ -25,20 +22,16 @@ const controllerIndex = {
                 nombre_producto: {
                     [op.like]: '%' + busqueda + '%'
                 }
-            }
+            },
+            include: [{ association: "user" }]
         })
-            .then(function(productos) {
-                db.Comentario.findAll()
-                    .then(function(comentarios) {
-                        res.render('searchResults', {
-                            productos: productos,
-                            comentarios: comentarios,
-                            busqueda: busqueda
-                        });
-                    });
+        .then(function(productos) {
+            res.render('searchResults', {
+                productos: productos,
+                busqueda: busqueda
             });
+        });
     }
-
 };
 
 module.exports = controllerIndex;
