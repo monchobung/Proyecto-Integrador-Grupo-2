@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<!-- Include Head -->
 <%- include('partials/head') %>
 <body>
 
@@ -9,36 +8,49 @@
 
 	<div class="container products-wrapper">
 		<div class="d-flex align-items-center">
-			<h2 class="products-title"><%= productos[0].nombre %></h2> 
+			<h2 class="products-title"><%= producto.nombre_producto %></h2>
 			<p class="product-detail-description">
 				<a href="/productadd" class="vinculo-editar">Editar</a>
 			</p>
 		</div>
+
 		<div class="product-detail">
 			<div class="row">
 				<article class="col-12 col-lg-8 product-detail-info">
-					<img src="<%= productos[0].imagen %>" alt="" class="product-detail-img">
+					<img src="/img/<%= producto.imagen %>" alt="" class="product-detail-img">
 					<p class="product-detail-description">
-						<%= productos[0].descripcion %>
+						<%= producto.descripcion %>
 					</p>
 				</article>
+
 				<div class="col-12 col-lg-4">
 					<section class="comments">
-						<% for (let i = 0; i < productos[0].comentarios.length; i++) { %>
+						<%
+						for (let i = 0; i < comentarios.length; i++) {
+							if (comentarios[i].producto_id == producto.id) {
+								let nombreUsuario = '';
+								for (let j = 0; j < usuarios.length; j++) {
+									if (usuarios[j].id == comentarios[i].usuario_id) {
+										nombreUsuario = usuarios[j].nombre_usuario;
+									}
+								}
+						%>
 							<article>
-								<img src="<%= productos[0].comentarios[i].imagenPerfil %>" alt="">
 								<div class="data">
 									<p class="user">
 										<strong>
-											<a href="profile.html"><%= productos[0].comentarios[i].usuario %>: </a>
+											<a href="/perfil"><%= nombreUsuario %>: </a>
 										</strong>
-										<%= productos[0].comentarios[i].texto %>
+										<%= comentarios[i].texto %>
 									</p>
 								</div>
 							</article>
-						<% } %>
+						<%
+							}
+						}
+						%>
 					</section>
-					
+
 					<form class="form" action="" method="POST">
 						<input class="form-input" type="text" value="" placeholder="Agregar comentario">
 						<button type="submit" class="buy-now-button">AGREGAR COMENTARIO</button>
@@ -49,9 +61,6 @@
 		</div>
 	</div>
 
-	<!-- footer -->
 	<%- include('partials/footer') %>
-	<!-- /footer -->
-
 </body>	
 </html>
