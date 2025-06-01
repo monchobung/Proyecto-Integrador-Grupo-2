@@ -91,6 +91,12 @@ const controllerRegistracion = {
             .catch(function(error) {
                 return res.send("Error al procesar el login.");
             });
+    },
+       
+    Logout: function(req, res) {
+        res.clearCookie("recordame");
+        req.session.destroy();
+        return res.redirect("/");
     }
 
 };
