@@ -9,7 +9,7 @@ const controllerIndex = {
         .then(function(productos) {
             res.render('index', {
                 title: 'Classic Motors',
-                productos: productos
+                productos: productos,
             });
         });
     },

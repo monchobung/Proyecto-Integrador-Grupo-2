@@ -38,9 +38,7 @@ const controllerRegistracion = {
                         nombre_usuario: usuario,
                         email: email,
                         contrasena: passwordEncriptada,
-                        fecha_nacimiento: nacimiento,
-                        createdAt: new Date(),
-                        updatedAt: new Date()
+                        fecha_nacimiento: nacimiento
                     })
                     .then(function() {
                         return res.redirect("/login");
