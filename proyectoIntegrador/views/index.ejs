@@ -2,8 +2,14 @@
 <html lang="es">
 <%- include('partials/head') %>
 <body>
-	<%- include('partials/header') %>
 
+	<% if (locals.userLoggeado) { %>
+		<%- include('partials/headerLogueado') %>
+	  <% } else { %>
+		<%- include('partials/header') %>
+	  <% } %>
+	  
+	  
 	<!-- Banner -->
 	<div class="banner">
 		<img src="/img/img-home-banner.jpg" alt="Banner de ofertas">
@@ -31,18 +37,7 @@
 										<%= productos[i].user.nombre_usuario %>
 									</a>
 								</p>
-								<p>Comentarios:</p>
-								<%
-								let contador = 0;
-								for (let j = 0; j < productos[i].comentario.length; j++) {
-									if (contador < 5) {
-								%>
-										<p><%= productos[i].comentario[j].texto %></p>
-								<%
-										contador++;
-									}
-								}
-								%>
+								
 							</article>
 						</a>
 					</section>

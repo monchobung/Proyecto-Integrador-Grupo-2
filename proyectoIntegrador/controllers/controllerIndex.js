@@ -4,12 +4,12 @@ const op = db.Sequelize.Op;
 const controllerIndex = {
     index: function(req, res) {
         db.Product.findAll({
-            include: [{ association: "user" }, { association: "comentario" }]
+            include: [{ association: "user" }]
         })
         .then(function(productos) {
             res.render('index', {
                 title: 'Classic Motors',
-                productos: productos,
+                productos: productos
             });
         });
     },
@@ -31,7 +31,9 @@ const controllerIndex = {
                 busqueda: busqueda
             });
         });
-    }
+    },
+   
+    
 };
 
 module.exports = controllerIndex;

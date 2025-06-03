@@ -27,19 +27,21 @@ app.use(session({secret: "Secret",
   resave: false, 
   saveUninitialized: true}));
 
-app.use(function(req, res, next){
+
+  app.use(function(req, res, next){
+    if(req.cookies.recordame != undefined && req.session.userLoggeado == undefined){
+      req.session.userLoggeado = req.cookies.recordame;
+    }
+    return next();
+  });
+
+  app.use(function(req, res, next){
   if(req.session.userLoggeado != undefined){
     res.locals.userLoggeado = req.session.userLoggeado;
   }
   return next();
 });
 
-app.use(function(req, res, next){
-  if(req.cookies.recordame != undefined && req.session.userLoggeado == undefined){
-    req.session.userLoggeado = req.cookies.recordame;
-  }
-  return next();
-});
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

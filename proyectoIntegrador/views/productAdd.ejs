@@ -1,41 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
-<!-- Include Head -->
-
 <%- include('partials/head') %>
 
 <body>
-	<!-- Header -->
-<%- include('partials/headerLogueado') %>
-	<!-- /Header -->
+	<%- include('partials/headerLogueado') %>
 
-	<!-- Novedades -->
 	<div class="container products-wrapper">
 		<div class="row">
 			<div class="col-12">
 				<h2 class="products-title">Agregar productos</h2>
 			</div>
+
 			<div class="contenedor-login">
-				<form action="/" method="get" class="formulario-login">
-				  <label for="imagen">Imagen del producto:</label>
-				  <input type="file" id="imagen" name="imagen">
-			  
-				  <label for="nombreproducto">Nombre del Producto:</label>
-				  <input type="text" id="nombreproducto" name="nombreproducto">
+				<form action="/producto/productadd" method="POST" class="formulario-login">
+					<label for="imagen">Imagen:</label>
+					<input type="text" id="imagen" name="imagen" required>
 
-				  <label for="descripcion">Descripcion del producto:</label>
-				  <input type="text" id="descripcion" name="descripcion">
-			  
-				
-			  
-				  <button type="submit">Publicar</button>
+					<label for="nombre_producto">Nombre del Producto:</label>
+					<input type="text" id="nombre_producto" name="nombre_producto" required>
+
+					<label for="descripcion">Descripción del producto:</label>
+					<input type="text" id="descripcion" name="descripcion" required>
+
+					<button type="submit">Publicar</button>
 				</form>
-			  </div>
+			</div>
+		</div>
+	</div>
 
-
-	<!-- footer -->
 	<%- include('partials/footer') %>
-	<!-- /footer -->
 </body>
-
 </html>

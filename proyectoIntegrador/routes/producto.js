@@ -5,6 +5,8 @@ const controllerProducto = require('../controllers/controllerProducto');
 
 router.get('/detalle/:id', controllerProducto.detalle);
 router.get('/perfil/:id', controllerProducto.perfil);
-router.post('/:id/comentario', controllerProducto.agregar_comentario);
+router.get('/productadd', controllerProducto.productadd);
+router.post('/productadd', controllerProducto.guardar);
 
-module.exports = router;
+
+module.exports = router

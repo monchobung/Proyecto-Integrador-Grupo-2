@@ -1,7 +1,6 @@
 const db = require('../database/models');
 
 const controllerProducto = {
-
     detalle: function(req, res) {
         let id = req.params.id;
 
@@ -12,9 +11,7 @@ const controllerProducto = {
             ]
         })
         .then(function(producto) {
-            res.render('product', {
-                producto: producto
-            });
+            res.render('product', { producto: producto });
         });
     },
 
@@ -31,22 +28,26 @@ const controllerProducto = {
             });
         });
     },
-
-    agregar_comentario: function(req, res) {
-        if (!req.session.userLoggeado) {
-            return res.redirect('/login'); 
-        }
+    productadd: function(req, res) {
+        return res.render('productadd');
+    },
     
-        db.Comentario.create({
-            texto: req.body.texto,
-            producto_id: req.params.id,
+    
+
+    
+    guardar: function(req, res) {
+        db.Product.create({
+            imagen: req.body.imagen,
+            nombre_producto: req.body.nombre_producto,
+            descripcion: req.body.descripcion,
             usuario_id: req.session.userLoggeado.id
         })
         .then(function() {
-            res.redirect('/producto/detalle/' + req.params.id);
+            res.redirect('/');
         });
-    }
-
+    },
 };
+
+
 
 module.exports = controllerProducto;
