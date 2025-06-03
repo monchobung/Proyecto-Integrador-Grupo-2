@@ -51,10 +51,12 @@
 				</ul>
 	
 				<ul class="right-navbar">
-					<li><a href="profile.html">
-							<%= userLoggeado.nombre_usuario %><i class="fas fa-user"></i>
+					<li>
+						<a href="/producto/perfil/<%= userLoggeado.id %>">
+						  <%= userLoggeado.nombre_usuario %> <i class="fas fa-user"></i>
 						</a>
-					</li>
+					  </li>
+					  
 					<li>
 						<form action="/logout" method="post">
 							<button class="logout" type="submit">
