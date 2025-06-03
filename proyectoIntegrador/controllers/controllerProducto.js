@@ -46,6 +46,25 @@ const controllerProducto = {
             res.redirect('/');
         });
     },
+
+    agregar_comentario: function(req, res) {
+        if (!req.session.userLoggeado) {
+            return res.redirect('/login'); 
+        }
+    
+        db.Comentario.create({
+            texto: req.body.texto,
+            producto_id: req.params.id,
+            usuario_id: req.session.userLoggeado.id,
+            
+        })
+        .then(function() {
+            res.redirect('/producto/detalle/' + req.params.id);
+        });
+    }
+
+
+
 };
 
 
